@@ -125,8 +125,9 @@
 }
 .contact .error {
   color: red;
-  font-size: 14px;
-  margin-top: 5px;
+  font-size: 16px;
+  align-self: flex-start;
+  padding: 0 30%;
 }
 
 .modal-overlay {

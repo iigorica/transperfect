@@ -106,47 +106,7 @@ const HomeSr = () => {
       
       </div>
 
-      {/* <form className="contact" id="contactForm" method="POST">
-        <h1>Contact me</h1>
-        <div className="form-group">
-          <input
-            type="text"
-            name="name"
-            id="first-name"
-            value=""
-            required
-            placeholder="First name"
-          />
-
-          <input
-            type="text"
-            name="name"
-            id="last-name"
-            value=""
-            required
-            placeholder="Last name"
-          />
-
-          <input
-            type="email"
-            name="email"
-            id="email"
-            value=""
-            required
-            placeholder="Email address"
-          />
-
-          <textarea
-            name="text"
-            id="text-area"
-            cols="10"
-            rows="3"
-            placeholder="Text"
-          ></textarea>
-
-          <button>Submit</button>
-        </div>
-      </form>  */}
+      
 
       <ContactFormSr />
 

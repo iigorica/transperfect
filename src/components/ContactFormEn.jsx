@@ -25,7 +25,7 @@ function ContactForm() {
 
     // Validacija email-a
     if (!email.trim()) {
-      errors.email = 'Polje Email je obavezno';
+      errors.email = 'This field is required!';
     } else if (!/\S+@\S+\.\S+/.test(email)) {
       errors.email = 'This field is required!';
     }
