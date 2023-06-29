@@ -1,0 +1,46 @@
+@mixin position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@mixin hPosition {
+    text-align: center;
+    font-size: larger;
+      padding: 40px 0;
+}
+
+@mixin listPosition{
+    padding: 0 0 20px 20px;
+}
+
+@mixin contactPosition{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+}
+
+@mixin button{
+    padding: 2px 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        background: rgb(6, 67, 235);
+        color: #fff;
+        margin: 20px;
+        cursor: pointer;
+        
+        
+}
+
+$background: rgb(196, 194, 194);
+
+// we can do this way as well if we need to change background or any position etc
+// @mixin name ($background,$direction){
+//
+    //}
+
+    //footer{
+    //    @include name(red,row/column...);
+   // }

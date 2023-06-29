@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import HomeEn from './components/HomeEn';
+import HomeSr from './components/HomeSr';
+import React, { useState } from 'react';
+import './style.scss';
 
 function App() {
+
+  const [language, setLanguage] = useState(1);
+
+  const changeLanguage = () => {
+    if (language === 0) {
+      setLanguage(1);
+    } else {
+      setLanguage(0);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <header className="header">
+      <div>
+        <h4>PI</h4>
+        <h3>Pantelic Igor</h3>
+      </div>
+      <i className="fa-solid fa-people-group" onClick={changeLanguage}></i>
+    </header>
+      {language === 0 ? <HomeEn /> : <HomeSr />}
+
     </div>
   );
 }

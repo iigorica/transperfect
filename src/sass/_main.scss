@@ -1,0 +1,58 @@
+@import './variables';
+
+.about {
+   background: $background;
+
+   h1 {
+      @include hPosition();
+   }
+   P{
+      text-align: center;
+      padding: 20px 20px
+   }
+}
+
+.education{
+   h1 {
+      @include hPosition();
+   }
+   .list{
+      @include listPosition();
+   }
+   ul{
+      padding-left: 20px;
+   }
+  
+}
+
+.experience{
+   background: $background;
+   h1{
+      @include hPosition();
+   } 
+   
+   .list{
+      @include listPosition();
+   }
+   ul{
+      padding-left: 20px;
+   }
+}
+
+.skills{
+   h1{
+      @include hPosition();
+   }
+   .list{
+      @include listPosition();
+   }
+   ul{
+      padding-left: 20px;
+   }
+}
+
+.error{
+   color: red;
+   font-size: 14px;
+   margin-top: 5px;
+}

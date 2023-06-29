@@ -1,0 +1,30 @@
+@import './variables';
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    margin: 0 15px ;
+    cursor: pointer;
+
+    div {
+       display: flex;
+       align-items: center;
+       font-size: 13px;
+        }
+        h4 {
+            width: 30px;
+            height: 30px;
+            background: rgb(232, 229, 229);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            &:hover{
+                background: #ffffff;
+            }
+        }
+       
+}
